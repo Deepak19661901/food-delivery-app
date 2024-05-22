@@ -1,0 +1,22 @@
+.verify {
+  min-height: 60vh;
+  display: grid;
+}
+
+.verify .spinner {
+  width: 100px;
+  height: 100px;
+  place-self: center;
+  border: 10px solid black;
+  border-top: 10px solid tomato; /* Add solid to the border-top */
+  border-radius: 50%; /* Make it circular */
+  animation:rotate 0.2s infinite;
+  text-align: center;
+  
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
