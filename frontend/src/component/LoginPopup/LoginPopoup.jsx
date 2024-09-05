@@ -7,7 +7,7 @@ const LoginPopoup = ({setShowLogin}) => {
 
   const {url,token,setToken} = useContext(StoreContext)
   const [currentState,setCurrentState]=useState("Login")
-  // Here we are taking data from user in frontend
+  // Here am taking data from the user for login and signup
   const [data,setData]=useState({
     name:"",
     email:"",
@@ -61,8 +61,7 @@ const LoginPopoup = ({setShowLogin}) => {
         </div>
         <button type='submit'>{currentState==="Sign Up"?"Create Account":"Login"}</button>
         <div className="login-popup-condition">
-          <input type="checkbox" required />
-          <p>By Continuing ,i agree to the term of use & privacy policy.</p>
+         
         </div>
         { 
           currentState==="Login"? 

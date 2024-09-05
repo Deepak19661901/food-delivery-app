@@ -1,7 +1,6 @@
 import express from 'express'
 import cors from 'cors'
 import {connectDB} from './config/db.js'
-import fs from 'fs'
 import foodRouter from './routes/food.route.js'
 import userRouter from './routes/user.route.js'
 import 'dotenv/config' 
@@ -10,7 +9,7 @@ import orderRouter from './routes/order.routes.js'
 
 //app config
 const app = express()
-const PORT = 4000
+const PORT = process.env.PORT||4000;
 
 
 // middleware

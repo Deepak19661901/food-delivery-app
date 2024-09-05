@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='header-content'>
-        <h2>Order Your Favourite Food</h2>
+        <h2>satisfy your graving today</h2>
         <p>Choose from a diverse Menu featuring a delectable array of dishes crafted with the finest ingrediants
         and culinary expertise .our mission is to satisfy your craving and elevate  your dining experince ,one delecious meel at a time 
         </p>

@@ -6,7 +6,7 @@ const Cart = () => {
   const { food_list, cartItems, removeFromCart,getTotalCartAmount,url } = useContext(StoreContext)
   const navigate = useNavigate()
   // console.log("cartItems", cartItems)
-
+  
 
   return (
     <div className='cart'>
@@ -63,15 +63,7 @@ const Cart = () => {
              <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
           </div>
 
-          <div className="cart-promocode">
-              <div>
-                <p>If You have PromoCode Enter it Here</p>
-                <div className='cart-promocode-input'>
-                    <input type="text" placeholder='promo code' />
-                    <button>Submit</button>
-                </div>
-              </div>
-          </div>
+          
         </div>
       </div>
 
